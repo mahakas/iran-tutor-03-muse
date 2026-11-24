@@ -1,0 +1,63 @@
+# --- Secrets / environment ---
+.env
+.env.*
+!.env.example
+!.env.demo.example
+
+# --- Source material and data (never commit) ---
+*.pdf
+*.PDF
+/backend/storage/
+/storage/
+/data/
+*.sqlite3
+
+# --- Docker volumes / local service data ---
+docker-volumes/
+.docker-data/
+volumes/
+postgres_data/
+qdrant_data/
+qdrant_storage/
+redis_data/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Node ---
+node_modules/
+.next/
+out/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+
+# --- Logs / OS / editors ---
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
